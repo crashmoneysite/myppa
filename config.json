@@ -73,6 +73,7 @@
         {
           "type": "field",
           "domain": [
+            "domain:magic.com",
             "domain:www.gstatic.com", "geosite:google", "geosite:category-porn",
             "regexp:^.*\\.?(instagram|instagr\\.am|cdninstagram|instagramcdn|fbcdn|facebook|edgecastcdn|akamaihd|instagramstatic|meta|threads|whatsapp|wa|telegram|tme|cdn-telegram|snapchat|sc-cdn|sc-prod|sc-gw|linkedin|licdn|reddit|redd|vk|pinterest|pinimg|weibo|xiaohongshu|xhs)\\.(com|net|org|am|io|ai|co)$",
             "regexp:^.*\\.?(youtube|youtu\\.be|ytimg|googlevideo|youtube-nocookie|ggpht|gstatic|goog|google|googleapis?|googleusercontent|blogger|blogspot|withgoogle|waymo|deepmind)\\.[a-z0-9]+$",
