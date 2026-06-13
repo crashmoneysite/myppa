@@ -1,31 +1,31 @@
 {
   "overlapDurationMinutes": 180,
-"uuids": {
-  "01": "2cd09b58-e32b-472e-9e98-6140e708f2f5",
-  "02": "a98b4797-226e-4c40-8b17-73b22cf94c8e",
-  "03": "3f7c4db6-4702-4fc8-9f1d-72e1c3905cf2",
-  "04": "8d3e2321-72f5-470b-8d8a-9f5e3e2b1c6d",
-  "05": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-  "06": "c8a4d7b2-9a3f-413c-8c1a-2b3d4f5e6a7b",
-  "07": "e2c5f1a9-b3d4-4e78-9f2a-1c3d4e5f6a7b",
-  "08": "9f8e7d6c-5b4a-4321-8b7a-6c5d4e3f2a1b",
-  "09": "1a2b3c4d-5e6f-4789-8a9b-0c1d2e3f4a5b",
-  "10": "b3c4d5e6-f7a8-4901-9b2c-3d4e5f6a7b8c",
-  "11": "4e5f6a7b-8c9d-4012-a3b4-c5d6e7f8a9b0",
-  "12": "d5e6f7a8-b9c0-4123-b4c5-d6e7f8a9b0c1",
-  "13": "7b8c9d0e-1f2a-4345-8c6d-7e8f9a0b1c2d",
-  "14": "a1b2c3d4-e5f6-4789-9a0b-1c2d3e4f5a6b",
-  "15": "f6e5d4c3-b2a1-4098-a7b6-c5d4e3f2a1b0",
-  "16": "3d4e5f6a-7b8c-4901-bd2e-3f4a5b6c7d8e",
-  "17": "c1d2e3f4-a5b6-4789-8f0a-1b2c3d4e5f6a",
-  "18": "8a9b0c1d-2e3f-4456-a7b8-c9d0e1f2a3b4",
-  "19": "5f6a7b8c-9d0e-4123-bc4d-5e6f7a8b9c0d",
-  "20": "e3f2a1b0-c9d8-4e7f-a6b5-c4d3e2f1a0b9",
-  "21": "2a3b4c5d-6e7f-4890-9a1b-2c3d4e5f6a7b",
-  "22": "b0c1d2e3-f4a5-4b6c-8d7e-8f9a0b1c2d3e",
-  "23": "9d8c7b6a-5f4e-4d3c-ab2a-1b0c9d8e7f6a",
-  "24": "6a7b8c9d-0e1f-42a3-b4c5-d6e7f8a9b0c1"
-},
+  "uuids": {
+    "01": "2cd09b58-e32b-472e-9e98-6140e708f2f5",
+    "02": "a98b4797-226e-4c40-8b17-73b22cf94c8e",
+    "03": "3f7c4db6-4702-4fc8-9f1d-72e1c3905cf2",
+    "04": "8d3e2321-72f5-470b-8d8a-9f5e3e2b1c6d",
+    "05": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "06": "c8a4d7b2-9a3f-413c-8c1a-2b3d4f5e6a7b",
+    "07": "e2c5f1a9-b3d4-4e78-9f2a-1c3d4e5f6a7b",
+    "08": "9f8e7d6c-5b4a-4321-8b7a-6c5d4e3f2a1b",
+    "09": "1a2b3c4d-5e6f-4789-8a9b-0c1d2e3f4a5b",
+    "10": "b3c4d5e6-f7a8-4901-9b2c-3d4e5f6a7b8c",
+    "11": "4e5f6a7b-8c9d-4012-a3b4-c5d6e7f8a9b0",
+    "12": "d5e6f7a8-b9c0-4123-b4c5-d6e7f8a9b0c1",
+    "13": "7b8c9d0e-1f2a-4345-8c6d-7e8f9a0b1c2d",
+    "14": "a1b2c3d4-e5f6-4789-9a0b-1c2d3e4f5a6b",
+    "15": "f6e5d4c3-b2a1-4098-a7b6-c5d4e3f2a1b0",
+    "16": "3d4e5f6a-7b8c-4901-bd2e-3f4a5b6c7d8e",
+    "17": "c1d2e3f4-a5b6-4789-8f0a-1b2c3d4e5f6a",
+    "18": "8a9b0c1d-2e3f-4456-a7b8-c9d0e1f2a3b4",
+    "19": "5f6a7b8c-9d0e-4123-bc4d-5e6f7a8b9c0d",
+    "20": "e3f2a1b0-c9d8-4e7f-a6b5-c4d3e2f1a0b9",
+    "21": "2a3b4c5d-6e7f-4890-9a1b-2c3d4e5f6a7b",
+    "22": "b0c1d2e3-f4a5-4b6c-8d7e-8f9a0b1c2d3e",
+    "23": "9d8c7b6a-5f4e-4d3c-ab2a-1b0c9d8e7f6a",
+    "24": "6a7b8c9d-0e1f-42a3-b4c5-d6e7f8a9b0c1"
+  },
   "xrayConfig": {
     "log": {
       "access": "none",
@@ -36,7 +36,11 @@
     },
     "api": {
       "tag": "api",
-      "services": ["HandlerService", "LoggerService", "StatsService"]
+      "services": [
+        "HandlerService",
+        "LoggerService",
+        "StatsService"
+      ]
     },
     "inbounds": [
       {
@@ -44,37 +48,131 @@
         "listen": "127.0.0.1",
         "port": 62789,
         "protocol": "dokodemo-door",
-        "settings": { "address": "127.0.0.1" }
+        "settings": {
+          "address": "127.0.0.1"
+        }
       }
     ],
     "outbounds": [
-      { "tag": "blocked", "protocol": "blackhole", "settings": {} },
-      { "tag": "direct", "protocol": "freedom", "settings": { "domainStrategy": "AsIs", "redirect": "", "noises": [] } }
+      {
+        "tag": "blocked",
+        "protocol": "blackhole",
+        "settings": {}
+      },
+      {
+        "tag": "direct",
+        "protocol": "freedom",
+        "settings": {
+          "domainStrategy": "AsIs",
+          "redirect": "",
+          "noises": []
+        }
+      }
     ],
     "policy": {
-      "levels": { "0": { "statsUserDownlink": true, "statsUserUplink": true } },
-      "system": { "statsInboundDownlink": true, "statsInboundUplink": true, "statsOutboundDownlink": false, "statsOutboundUplink": false }
+      "levels": {
+        "0": {
+          "statsUserDownlink": true,
+          "statsUserUplink": true
+        }
+      },
+      "system": {
+        "statsInboundDownlink": true,
+        "statsInboundUplink": true,
+        "statsOutboundDownlink": false,
+        "statsOutboundUplink": false
+      }
     },
     "routing": {
       "domainStrategy": "AsIs",
       "rules": [
-        { "type": "field", "inboundTag": ["api"], "outboundTag": "api" },
-        { "type": "field", "outboundTag": "blocked", "ip": ["geoip:private"] },
-        { "type": "field", "outboundTag": "blocked", "protocol": ["bittorrent"] },
+        {
+          "type": "field",
+          "inboundTag": [
+            "api"
+          ],
+          "outboundTag": "api"
+        },
+        {
+          "type": "field",
+          "outboundTag": "blocked",
+          "ip": [
+            "geoip:private"
+          ]
+        },
+        {
+          "type": "field",
+          "outboundTag": "blocked",
+          "protocol": [
+            "bittorrent"
+          ]
+        },
         {
           "type": "field",
           "ip": [
-            "91.105.192.0/23", "91.108.4.0/22", "91.108.8.0/21", "91.108.16.0/21",
-            "91.108.56.0/22", "95.161.64.0/20", "149.154.160.0/20", "185.76.151.0/24",
-            "2001:67c:4e8::/48", "2001:b28:f23c::/47", "2001:b28:f23f::/48", "2a0a:f280::/32"
+            "91.105.192.0/23",
+            "91.108.4.0/22",
+            "91.108.8.0/21",
+            "91.108.16.0/21",
+            "91.108.56.0/22",
+            "95.161.64.0/20",
+            "149.154.160.0/20",
+            "185.76.151.0/24",
+            "2001:67c:4e8::/48",
+            "2001:b28:f23c::/47",
+            "2001:b28:f23f::/48",
+            "2a0a:f280::/32",
+            "13.210.25.233/32",
+            "13.212.170.102/32",
+            "13.212.171.212/32",
+            "15.161.130.86/32",
+            "15.254.1.17/32",
+            "162.62.33.45/32",
+            "162.62.33.70/32",
+            "162.62.34.10/32",
+            "18.141.176.65/32",
+            "18.156.137.147/32",
+            "18.231.148.103/32",
+            "3.1.80.68/32",
+            "3.25.190.152/32",
+            "3.82.147.36/32",
+            "34.220.160.16/32",
+            "35.154.64.7/32",
+            "35.72.32.125/32",
+            "52.13.150.128/32",
+            "52.13.42.120/32",
+            "52.50.131.212/32",
+            "54.207.168.84/32",
+            "54.248.64.192/32",
+            "150.109.90.0/23",
+            "96.17.72.0/23",
+            "119.29.0.0/16",
+            "162.14.0.0/16",
+            "45.40.192.0/18",
+            "113.59.232.0/24",
+            "120.88.56.0/23",
+            "103.16.136.0/24",
+            "203.205.219.0/24"
           ],
           "outboundTag": "direct"
         },
         {
           "type": "field",
           "domain": [
-            "domain:magic.com",
-            "domain:www.gstatic.com", "geosite:google", "geosite:category-porn",
+            "domain:www.gstatic.com",
+            "domain:brawlstars.com",
+            "domain:brawlstarsgame.com",
+            "domain:riotcdn.net",
+            "domain:riotgames.com",
+            "domain:wr.pvp.net",
+            "geosite:google",
+            "geosite:epicgames",
+            "geosite:category-porn",
+            "geosite:category-games",
+            "geosite:category-dev",
+            "geosite:category-ads",
+            "geosite:category-ads-all",
+            "geosite:category-entertainment",
             "regexp:^.*\\.?(instagram|instagr\\.am|cdninstagram|instagramcdn|fbcdn|facebook|edgecastcdn|akamaihd|instagramstatic|meta|threads|whatsapp|wa|telegram|tme|cdn-telegram|snapchat|sc-cdn|sc-prod|sc-gw|linkedin|licdn|reddit|redd|vk|pinterest|pinimg|weibo|xiaohongshu|xhs)\\.(com|net|org|am|io|ai|co)$",
             "regexp:^.*\\.?(youtube|youtu\\.be|ytimg|googlevideo|youtube-nocookie|ggpht|gstatic|goog|google|googleapis?|googleusercontent|blogger|blogspot|withgoogle|waymo|deepmind)\\.[a-z0-9]+$",
             "regexp:^.*\\.?(tiktok|tiktokcdn|pstatp|snssdk|bytecdn|muscdn|v[0-9]+\\.tiktokcdn|douyin|douyincdn)\\.(com|cn|net|io|ai)$",
@@ -85,7 +183,10 @@
             "regexp:^.*\\.(huggingface|replicate|runpod|cohere|anthropic|openai|stability|ai21|mistral|deepseek)\\.[a-z0-9]+$",
             "regexp:^.*\\.(azure|microsoft|msft|live|office|skype|onedrive|sharepoint)\\.(com|net|org)$",
             "regexp:^.*\\.?(spotify|soundcloud|deezer|tidal|music\\.apple|netflix|nflx|disney|disneyplus|disneystreaming|hulu|hbomax|max|crunchyroll|primevideo|amazonvideo|vimeo|dailymotion)\\.[a-z0-9]+$",
-            "regexp:^.*\\.?twitch\\.tv$"
+            "regexp:^.*\\.?twitch\\.tv$",
+            "regexp:^.*\\.?(discord|discordapp|discordcdn|discordstatus)\\.(com|net|media)$",
+            "regexp:^.*\\.?(steam|steampowered|steamstatic|ea|ubisoft|rockstargames|riotgames|blizzard|battle\\.net|epicgames)\\.[a-z0-9]+$",
+            "regexp:^.*\\.?(quora|medium|tumblr|zoom|pandora|last\\.fm|vudu|paramountplus|peacocktv|roku)\\.[a-z0-9]+$"
           ],
           "outboundTag": "direct"
         }
