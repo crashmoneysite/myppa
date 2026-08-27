@@ -1,36 +1,36 @@
 {
   "overlapDurationMinutes": 300,
   "uuids": {
-    "01": "2cd09b58-e32b-472e-9e98-6140e708f2f5",
-    "02": "a98b4797-226e-4c40-8b17-73b22cf94c8e",
-    "03": "3f7c4db6-4702-4fc8-9f1d-72e1c3905cf2",
-    "04": "8d3e2321-72f5-470b-8d8a-9f5e3e2b1c6d",
-    "05": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-    "06": "c8a4d7b2-9a3f-413c-8c1a-2b3d4f5e6a7b",
-    "07": "e2c5f1a9-b3d4-4e78-9f2a-1c3d4e5f6a7b",
-    "08": "9f8e7d6c-5b4a-4321-8b7a-6c5d4e3f2a1b",
-    "09": "1a2b3c4d-5e6f-4789-8a9b-0c1d2e3f4a5b",
-    "10": "b3c4d5e6-f7a8-4901-9b2c-3d4e5f6a7b8c",
-    "11": "4e5f6a7b-8c9d-4012-a3b4-c5d6e7f8a9b0",
-    "12": "d5e6f7a8-b9c0-4123-b4c5-d6e7f8a9b0c1",
-    "13": "7b8c9d0e-1f2a-4345-8c6d-7e8f9a0b1c2d",
-    "14": "a1b2c3d4-e5f6-4789-9a0b-1c2d3e4f5a6b",
-    "15": "f6e5d4c3-b2a1-4098-a7b6-c5d4e3f2a1b0",
-    "16": "3d4e5f6a-7b8c-4901-bd2e-3f4a5b6c7d8e",
-    "17": "c1d2e3f4-a5b6-4789-8f0a-1b2c3d4e5f6a",
-    "18": "8a9b0c1d-2e3f-4456-a7b8-c9d0e1f2a3b4",
-    "19": "5f6a7b8c-9d0e-4123-bc4d-5e6f7a8b9c0d",
-    "20": "e3f2a1b0-c9d8-4e7f-a6b5-c4d3e2f1a0b9",
-    "21": "2a3b4c5d-6e7f-4890-9a1b-2c3d4e5f6a7b",
-    "22": "b0c1d2e3-f4a5-4b6c-8d7e-8f9a0b1c2d3e",
-    "23": "9d8c7b6a-5f4e-4d3c-ab2a-1b0c9d8e7f6a",
-    "24": "6a7b8c9d-0e1f-42a3-b4c5-d6e7f8a9b0c1"
+    "01": "ebf08b97-d6cb-4841-8a6d-ed766014113f",
+    "02": "3494f6a5-fa88-45fd-85e4-5e076b4d68b8",
+    "03": "b274704c-491f-4492-aace-c12b0776576e",
+    "04": "e4267956-b0dd-46e4-b3a9-51539b2bd2e3",
+    "05": "a903dbda-c520-4ac5-b5aa-a88160c237db",
+    "06": "4f8ee4e2-3589-4c7a-9c0f-c42639d1869f",
+    "07": "6c15a0cf-f10b-44c9-8288-a279ec757f77",
+    "08": "c2408542-6658-4833-8303-8c0af0f18077",
+    "09": "f3def9cd-8eda-4ca7-87b9-1414e96639d9",
+    "10": "0ea728c4-160e-424e-844e-a85b3220045c",
+    "11": "9b9c2711-1c65-467a-93fa-fe76a43fa6b0",
+    "12": "43f84875-3928-4851-9da4-cb2a3443a353",
+    "13": "f1b8931a-9646-4712-b843-b5d6e990f5d7",
+    "14": "bcd20407-562e-4b89-8b86-37da5db1bce7",
+    "15": "5f1e0297-af5c-4824-b481-318c256707e4",
+    "16": "4ba7979d-a5b5-45b6-b027-e6f70e6ecf52",
+    "17": "5c9e6c4a-650e-492a-9850-3140c454c928",
+    "18": "958b251f-b25e-4d5d-bef4-6af14277422e",
+    "19": "afc20a75-20c4-4860-9a41-4edce5218780",
+    "20": "63019476-eeb4-40d1-9ef5-0a28157f5638",
+    "21": "1c88941f-4e48-48bf-83d1-9485f76d2a42",
+    "22": "3c64b749-d4b6-4719-9a94-f78036cc007e",
+    "23": "07ca632d-37d3-4016-a412-878a6a979a89",
+    "24": "bc3331a6-1fbb-46dc-94b7-a31626142b8f"
   },
   "xrayConfig": {
     "log": {
-      "access": "none",
+      "access": "/var/log/xray/access.log",
       "dnsLog": false,
-      "error": "",
+      "error": "/var/log/xray/error.log",
       "loglevel": "warning",
       "maskAddress": ""
     },
@@ -40,6 +40,12 @@
         "HandlerService",
         "LoggerService",
         "StatsService"
+      ]
+    },
+    "dns": {
+      "servers": [
+        "1.1.1.1",
+        "8.8.8.8"
       ]
     },
     "inbounds": [
@@ -63,7 +69,7 @@
         "tag": "direct",
         "protocol": "freedom",
         "settings": {
-          "domainStrategy": "AsIs",
+          "domainStrategy": "UseIP",
           "redirect": "",
           "noises": []
         }
@@ -95,17 +101,70 @@
         },
         {
           "type": "field",
-          "outboundTag": "blocked",
           "ip": [
             "geoip:private"
-          ]
+          ],
+          "outboundTag": "blocked"
         },
         {
           "type": "field",
-          "outboundTag": "blocked",
+          "domain": [
+            "geosite:private"
+          ],
+          "outboundTag": "blocked"
+        },
+        {
+          "type": "field",
           "protocol": [
             "bittorrent"
-          ]
+          ],
+          "outboundTag": "blocked"
+        },
+        {
+          "type": "field",
+          "ip": [
+            "1.1.1.1/32",
+            "1.0.0.1/32",
+            "8.8.8.8/32",
+            "8.8.4.4/32",
+            "9.9.9.9/32",
+            "2606:4700:4700::1111/128",
+            "2001:4860:4860::8888/128"
+          ],
+          "port": "53,443,853",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "port": "22,23,25,110,135-139,143,445,465,587,993,995,1433,2525,3306,3389,4444,5060,5061,5432,5900,6379,6660-6669,6697,11211,27017",
+          "outboundTag": "blocked"
+        },
+        {
+          "type": "field",
+          "network": "udp",
+          "port": "17,19,53,69,123,161,162,389,1900,5353,11211",
+          "outboundTag": "blocked"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:telegram.org",
+            "domain:telegram.me",
+            "domain:t.me",
+            "domain:tx.me",
+            "domain:telesco.pe",
+            "domain:tdesktop.com",
+            "domain:telegra.ph",
+            "domain:graph.org",
+            "domain:cdn-telegram.org",
+            "domain:telegram-cdn.org",
+            "domain:telegram.dog",
+            "domain:telegram.space",
+            "domain:fragment.com",
+            "domain:comments.app"
+          ],
+          "port": "80,443",
+          "outboundTag": "direct"
         },
         {
           "type": "field",
@@ -121,35 +180,38 @@
             "2001:67c:4e8::/48",
             "2001:b28:f23c::/47",
             "2001:b28:f23f::/48",
-            "2a0a:f280::/32",
-            "173.245.48.0/20",
-            "103.21.244.0/22",
-            "103.22.200.0/22",
-            "103.31.4.0/22",
-            "141.101.64.0/18",
-            "108.162.192.0/18",
-            "190.93.240.0/20",
-            "188.114.96.0/20",
-            "197.234.240.0/22",
-            "198.41.128.0/17",
-            "162.158.0.0/15",
-            "104.16.0.0/13",
-            "104.24.0.0/14",
-            "172.64.0.0/13",
-            "131.0.72.0/22",
-            "2400:cb00::/32",
-            "2606:4700::/32",
-            "2803:f800::/32",
-            "2405:b500::/32",
-            "2405:8100::/32",
-            "2a06:98c0::/29",
-            "2c0f:f248::/32",
-            "129.134.0.0/17",
-            "157.240.0.0/16",
-            "173.252.64.0/18",
-            "179.60.192.0/22",
-            "185.60.216.0/22",
-            "204.15.20.0/22",
+            "2a0a:f280::/32"
+          ],
+          "port": "80,443",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "domain": [
+            "domain:instagram.com",
+            "domain:instagr.am",
+            "domain:cdninstagram.com",
+            "domain:ig.me",
+            "domain:facebook.com",
+            "domain:facebook.net",
+            "domain:fbcdn.net",
+            "domain:fbsbx.com",
+            "domain:fb.com",
+            "domain:fb.me",
+            "domain:fbpigeon.com",
+            "domain:meta.com",
+            "domain:threads.net",
+            "domain:threads.com",
+            "domain:whatsapp.com",
+            "domain:whatsapp.net",
+            "domain:wa.me"
+          ],
+          "port": "80,443",
+          "outboundTag": "direct"
+        },
+        {
+          "type": "field",
+          "ip": [
             "31.13.24.0/21",
             "31.13.64.0/18",
             "45.64.40.0/22",
@@ -157,91 +219,24 @@
             "69.63.176.0/20",
             "69.171.224.0/19",
             "74.119.76.0/22",
-            "8.8.8.0/24",
-            "8.8.4.0/24",
-            "34.0.0.0/10",
-            "35.192.0.0/14",
-            "104.154.0.0/15",
-            "104.196.0.0/14",
-            "130.211.0.0/22",
-            "142.250.0.0/15",
-            "172.217.0.0/16",
-            "216.58.192.0/19",
-            "13.32.0.0/15",
-            "13.224.0.0/14",
-            "18.64.0.0/14",
-            "52.46.0.0/18",
-            "52.84.0.0/15",
-            "54.182.0.0/16",
-            "54.192.0.0/16",
-            "54.230.0.0/15",
-            "64.252.64.0/18",
-            "99.77.0.0/16",
-            "108.138.0.0/15",
-            "143.204.0.0/16",
-            "204.246.164.0/22",
-            "13.64.0.0/11",
-            "13.96.0.0/13",
-            "13.104.0.0/14",
-            "20.33.0.0/16",
-            "20.34.0.0/15",
-            "52.238.0.0/16",
-            "23.235.32.0/20",
-"43.249.72.0/22",
-"103.244.50.0/24",
-"103.245.222.0/23",
-"103.245.224.0/24",
-"104.156.80.0/20",
-"140.32.0.0/15",
-"140.248.64.0/18",
-"146.75.0.0/16",
-"151.101.0.0/16",
-"157.52.64.0/18",
-"167.82.0.0/17",
-"172.111.64.0/18",
-"185.31.16.0/22",
-"199.27.72.0/21",
-"199.232.0.0/16",
-"2a04:4e40::/32",
-"2a04:4e42::/32"
+            "102.132.96.0/20",
+            "103.4.96.0/22",
+            "129.134.0.0/17",
+            "157.240.0.0/16",
+            "173.252.64.0/18",
+            "179.60.192.0/22",
+            "185.60.216.0/22",
+            "204.15.20.0/22",
+            "2a03:2880::/32",
+            "2620:0:1c00::/40"
           ],
+          "port": "80,443",
           "outboundTag": "direct"
         },
         {
           "type": "field",
-          "domain": [
-            "domain:www.gstatic.com",
-            "domain:brawlstars.com",
-            "domain:brawlstarsgame.com",
-            "domain:riotcdn.net",
-            "domain:riotgames.com",
-            "domain:wr.pvp.net",
-            "geosite:google",
-            "geosite:epicgames",
-            "geosite:category-porn",
-            "geosite:category-games",
-            "geosite:category-dev",
-            "geosite:category-ads",
-            "geosite:category-ads-all",
-            "geosite:category-entertainment",
-            "regexp:^.*\\.?(instagram|instagr\\.am|cdninstagram|instagramcdn|fbcdn|facebook|fbsbx|edgecastcdn|akamaihd|instagramstatic|meta|threads|whatsapp|wa|cdn-whatsapp|whatsapp\\.net)\\.(com|net|org|am|io|co)$",
-            "regexp:^.*\\.?(youtube|youtu\\.be|ytimg|googlevideo|youtube-nocookie|ggpht|gstatic|goog|google|googleapis?|googleusercontent|blogger|blogspot|withgoogle|waymo|deepmind|android|play|googleweblight|googlezip|gvt1|gvt2|appspot|firebaseio|crashlytics)\\.[a-z0-9]+$",
-            "regexp:^.*\\.?(telegram|t\\.me|tme|cdn-telegram|telegram-cdn|telesco\\.pe)\\.(org|com)$",
-            "regexp:^.*\\.?(tiktok|tiktokcdn|tiktokv|pstatp|snssdk|bytecdn|muscdn|v[0-9]+\\.tiktokcdn|douyin|douyincdn|byteoversea|ibyteimg|tlivecdn)\\.(com|cn|net|io|ai)$",
-            "regexp:^.*\\.?(twitter|twimg|t\\.co|x|cp\\.cloudflare|periscope|pscp)\\.(com|net|org|ai|co|tv)$",
-            "regexp:^.*\\.?(signal|viber|line-apps|line-cdn|line-scdn|wechat|weixin|qq|slack|slack-edge|slack-msgs|discord|discordapp|discordcdn|discordstatus)\\.(com|net|org|media|me)$",
-            "regexp:^.*\\.?(snapchat|sc-cdn|sc-prod|sc-gw|snap|linkedin|licdn|reddit|redd|redditstatic|redditmedia|vk|pinterest|pinimg|weibo|xiaohongshu|xhs|tumblr)\\.(com|net|org|io|co)$",
-            "regexp:^.*\\.?(netflix|nflx|nflximg|nflxvideo|nflxext|disney|disneyplus|disneystreaming|dssott|hulu|hbomax|max|crunchyroll|primevideo|amazonvideo|vimeo|dailymotion|twitch|ttvnw)\\.[a-z0-9]+$",
-            "regexp:^.*\\.?(spotify|spotifycdn|scdn|soundcloud|sndcdn|deezer|dzcdn|tidal|music\\.apple|pandora|last\\.fm|iheart)\\.[a-z0-9]+$",
-            "regexp:^.*\\.?(giphy|media\\.giphy|tenor|media\\.tenor|imgur|gfycat|imgbb|postimg|flickr)\\.(com|net|co|io|org)$",
-            "regexp:^.*\\.?(steam|steampowered|steamstatic|steamcommunity|ea|ubisoft|rockstargames|riotgames|riotcdn|blizzard|battle\\.net|epicgames|playstation|xbox|minecraft|mojang|roblox)\\.[a-z0-9]+$",
-            "regexp:^.*\\.(openai|chatgpt|anthropic|claude|deepseek|perplexity|mistral|stability|midjourney|leonardo|recraft|writesonic|character|inflection|together|voyageai|ai21|aleph-alpha|runwayml|deepai|cerebras|google|gemini|palm|cohere|huggingface|replicate|runpod|notion|replit|langchain|flowiseai|botpress|rasa|nvidia)\\.[a-z0-9]+$",
-            "regexp:^.*\\.(azure|microsoft|msft|live|office|skype|onedrive|sharepoint|windowsupdate|apple|icloud|cdn-apple|mzstatic)\\.(com|net|org)$",
-            "regexp:^.*\\.?(akamai|akamaihd|edgecast|fastly|fastlynet|cloudfront|cloudflare|cdn|cdnjs|jsdelivr|unpkg)\\.(net|com|org)$",
-            "regexp:(porn|sex|xvideo|xxx|xnxx|xhamster|adult|ero|pornhub|spankbang|eporner|youporn|redtube|cam4|chaturbate)",
-            "regexp:^.*\\.?(dns|doh|dot|cloudflare-dns|quad9|opendns|nextdns|adguard)\\.(com|net|org|io|info)$"
-          ],
-          "outboundTag": "direct"
+          "network": "tcp,udp",
+          "outboundTag": "blocked"
         }
       ]
     },
