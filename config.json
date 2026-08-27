@@ -28,9 +28,9 @@
   },
   "xrayConfig": {
     "log": {
-      "access": "/var/log/xray/access.log",
+      "access": "none",
       "dnsLog": false,
-      "error": "/var/log/xray/error.log",
+      "error": "",
       "loglevel": "warning",
       "maskAddress": ""
     },
