@@ -178,7 +178,7 @@
             "domain:telegram.space",
             "domain:fragment.com",
             "domain:comments.app",
-            "geosite:google",
+            "geosite:google"
           ],
           "port": "80,443",
           "outboundTag": "direct"
