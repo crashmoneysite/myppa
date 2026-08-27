@@ -146,6 +146,22 @@
           "outboundTag": "blocked"
         },
         {
+  "type": "field",
+  "domain": [
+    "domain:appspot.com",
+    "domain:run.app",
+    "domain:cloudfunctions.net",
+    "domain:firebaseapp.com",
+    "domain:web.app",
+    "domain:script.google.com",
+    "domain:sites.google.com",
+    "domain:blogspot.com",
+    "domain:page.link",
+    "domain:goo.gl"
+  ],
+  "outboundTag": "blocked"
+},
+        {
           "type": "field",
           "domain": [
             "domain:telegram.org",
