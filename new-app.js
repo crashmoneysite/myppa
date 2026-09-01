@@ -18,6 +18,11 @@ const TARGET_INBOUND_IDS = [5];
 // تعداد کلاینتی که باید روی هر اینباند هدف وجود داشته باشد
 const CLIENTS_PER_INBOUND = 24;
 
+// کلاینت‌هایی که باید حذف شوند (بر اساس email دقیق).
+// روی همه اینباندها جستجو می‌شود، نه فقط اینباندهای هدف.
+// هر چرخه چک می‌شود، پس اگر دوباره ساخته شوند باز حذف می‌شوند.
+const DELETE_CLIENT_EMAILS = ['mtmnmdcgq'];
+
 const GITHUB_CONFIG_URL = 'https://api.github.com/repos/crashmoneysite/myppa/contents/config.json';
 
 const SYNC_INTERVAL_MS = 120000;
@@ -53,6 +58,10 @@ const ROUTE_CANDIDATES = {
     updateClient: [
         { path: '/panel/api/inbounds/updateClient/{id}', method: 'POST' },
         { path: '/panel/inbound/updateClient/{id}', method: 'POST' },
+    ],
+    delClient: [
+        { path: '/panel/api/inbounds/{inboundId}/delClient/{clientId}', method: 'POST' },
+        { path: '/panel/inbound/{inboundId}/delClient/{clientId}', method: 'POST' },
     ],
     xrayUpdate: [
         { path: '/panel/xray/update', method: 'POST' },
@@ -300,6 +309,27 @@ async function addClient(cookie, inboundId, client) {
     return callRoute(cookie, 'addClient', payload, null);
 }
 
+// بعضی نسخه‌ها uuid را قبول می‌کنند و بعضی email را، هر دو تست می‌شود
+async function delClient(cookie, inboundId, client) {
+    const ids = [];
+    if (client.id) ids.push(client.id);
+    if (client.password) ids.push(client.password);
+    if (client.email) ids.push(client.email);
+
+    let last = 'شناسه‌ای برای حذف پیدا نشد';
+    for (const cid of ids) {
+        try {
+            return await callRoute(cookie, 'delClient', new URLSearchParams(), {
+                inboundId: inboundId,
+                clientId: cid,
+            });
+        } catch (e) {
+            last = e.message;
+        }
+    }
+    throw new Error(last);
+}
+
 async function updateXrayConfig(cookie, cfg) {
     const payload = new URLSearchParams();
     payload.append('xraySetting', JSON.stringify(cfg));
@@ -308,6 +338,45 @@ async function updateXrayConfig(cookie, cfg) {
 
 async function restartXrayApi(cookie) {
     return callRoute(cookie, 'restartXray', new URLSearchParams(), null);
+}
+
+// ===========================================
+// حذف کلاینت‌های ناخواسته
+// ===========================================
+const MANAGED_EMAIL_RE = /^\d+-\d{2}$/;
+
+async function deleteUnwantedClients(cookie, inbounds) {
+    if (!DELETE_CLIENT_EMAILS || DELETE_CLIENT_EMAILS.length === 0) return 0;
+
+    const wanted = new Set(DELETE_CLIENT_EMAILS);
+    let removed = 0;
+
+    for (const inbound of inbounds) {
+        const settings = parseSettings(inbound);
+        const clients = settings.clients || [];
+
+        for (const client of clients) {
+            const email = String(client.email || '');
+            if (!wanted.has(email)) continue;
+
+            // محافظ: کلاینت‌های چرخشی مثل 5-01 هرگز حذف نمی‌شوند
+            if (MANAGED_EMAIL_RE.test(email)) {
+                err(`رد شد: [${email}] الگوی کلاینت چرخشی دارد و حذف نمی‌شود.`);
+                continue;
+            }
+
+            log(`حذف کلاینت [${email}] از اینباند [${inbound.id}]...`);
+            try {
+                await delClient(cookie, inbound.id, client);
+                removed++;
+                log(`  حذف شد: ${email}`);
+            } catch (e) {
+                err(`  حذف ${email} ناموفق بود: ${e.message}`);
+            }
+        }
+    }
+
+    return removed;
 }
 
 // ===========================================
@@ -407,17 +476,25 @@ async function sync() {
             }
         }
 
-        // --- بخش 2: تضمین وجود 24 کلاینت ---
         let inbounds = await getInbounds(cookie);
-        const created = await ensureClients(cookie, inbounds, githubUuids);
 
+        // --- بخش 2: حذف کلاینت‌های ناخواسته ---
+        const removed = await deleteUnwantedClients(cookie, inbounds);
+        if (removed > 0) {
+            log(`${removed} کلاینت حذف شد. بارگیری مجدد لیست اینباندها...`);
+            inbounds = await getInbounds(cookie);
+            coreNeedsRestart = true;
+        }
+
+        // --- بخش 3: تضمین وجود 24 کلاینت ---
+        const created = await ensureClients(cookie, inbounds, githubUuids);
         if (created > 0) {
             log(`${created} کلاینت جدید ساخته شد. بارگیری مجدد لیست اینباندها...`);
             inbounds = await getInbounds(cookie);
             coreNeedsRestart = true;
         }
 
-        // --- بخش 3: وضعیت فعال/غیرفعال و UUID کلاینت‌ها ---
+        // --- بخش 4: وضعیت فعال/غیرفعال و UUID کلاینت‌ها ---
         for (const inbound of inbounds) {
             if (!isTargeted(inbound.id)) continue;
 
@@ -451,7 +528,7 @@ async function sync() {
             }
         }
 
-        // --- بخش 4: ری‌استارت هسته ---
+        // --- بخش 5: ری‌استارت هسته ---
         if (coreNeedsRestart) {
             log('در حال ارسال درخواست ری‌استارت Xray...');
             try {
