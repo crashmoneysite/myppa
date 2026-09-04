@@ -87,7 +87,7 @@
     {"server": "62.210.238.175", "domain": "s85.asgardapp.com"}
 ],
   "cdn_traffic": {
-    "enabled": false,
+    "enabled": true,
     "scheme": "https",
     "listenPort": 8880,
      "pathPrefix": "/cdn",
