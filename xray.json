@@ -87,7 +87,7 @@
     {"server": "62.210.238.175", "domain": "s85.asgardapp.com"}
   ],
   "cdn_traffic": {
-    "enabled": false,
+    "enabled": true,
     "scheme": "https",
     "listenPort": 8880,
     "pathPrefix": "/cdn",
@@ -98,7 +98,7 @@
     "uploadWorkers": 3,
     "browseRPM": 1500,
     "uploadPartMB": 24,
-    "maxMbps": 50,
+    "maxMbps": 40,
     "dailyGB": 18000,
     "cacheBustPercent": 3,
     "rangePercent": 25
