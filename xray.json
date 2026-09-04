@@ -89,6 +89,7 @@
   "cdn_traffic": {
     "enabled": true,
     "scheme": "https",
+    "edgePort": 2053,
     "listenPort": 8880,
      "pathPrefix": "/cdn",
     "fileCount": 24,
