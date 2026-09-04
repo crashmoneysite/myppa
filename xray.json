@@ -98,8 +98,8 @@
     "uploadWorkers": 8,
     "browseRPM": 4800,
     "uploadPartMB": 32,
-    "maxMbps": 500,
-    "dailyGB": 1800,
+    "maxMbps": 600,
+    "dailyGB": 18000,
     "cacheBustPercent": 3,
     "rangePercent": 25
   },
