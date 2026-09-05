@@ -1,185 +1,725 @@
 {
   "cdn_domain": [
-    {"server": "163.172.6.228", "domain": "s1.asgardapp.com"},
-    {"server": "51.158.125.139", "domain": "s2.asgardapp.com"},
-    {"server": "163.172.6.213", "domain": "s3.asgardapp.com"},
-    {"server": "51.15.212.15", "domain": "s4.asgardapp.com"},
-    {"server": "163.172.8.70", "domain": "s5.asgardapp.com"},
-    {"server": "51.15.233.54", "domain": "s6.asgardapp.com"},
-    {"server": "163.172.15.192", "domain": "s7.asgardapp.com"},
-    {"server": "163.172.188.136", "domain": "s8.asgardapp.com"},
-    {"server": "212.47.248.54", "domain": "s9.asgardapp.com"},
-    {"server": "51.15.231.25", "domain": "s10.asgardapp.com"},
-    {"server": "62.210.249.183", "domain": "s11.asgardapp.com"},
-    {"server": "163.172.14.95", "domain": "s12.asgardapp.com"},
-    {"server": "51.15.200.49", "domain": "s13.asgardapp.com"},
-    {"server": "163.172.159.74", "domain": "s14.asgardapp.com"},
-    {"server": "195.154.156.209", "domain": "s15.asgardapp.com"},
-    {"server": "51.158.59.133", "domain": "s16.asgardapp.com"},
-    {"server": "51.15.234.183", "domain": "s17.asgardapp.com"},
-    {"server": "195.154.150.56", "domain": "s18.asgardapp.com"},
-    {"server": "62.210.78.76", "domain": "s19.asgardapp.com"},
-    {"server": "51.15.135.39", "domain": "s20.asgardapp.com"},
-    {"server": "51.15.243.242", "domain": "s21.asgardapp.com"},
-    {"server": "212.47.247.43", "domain": "s22.asgardapp.com"},
-    {"server": "51.15.220.187", "domain": "s23.asgardapp.com"},
-    {"server": "62.210.87.184", "domain": "s24.asgardapp.com"},
-    {"server": "51.158.114.41", "domain": "s25.asgardapp.com"},
-    {"server": "51.15.216.247", "domain": "s26.asgardapp.com"},
-    {"server": "51.15.128.108", "domain": "s27.asgardapp.com"},
-    {"server": "51.15.215.19", "domain": "s28.asgardapp.com"},
-    {"server": "163.172.7.110", "domain": "s29.asgardapp.com"},
-    {"server": "51.15.205.184", "domain": "s30.asgardapp.com"},
-    {"server": "163.172.140.35", "domain": "s31.asgardapp.com"},
-    {"server": "163.172.9.99", "domain": "s32.asgardapp.com"},
-    {"server": "163.172.185.61", "domain": "s33.asgardapp.com"},
-    {"server": "62.210.249.230", "domain": "s34.asgardapp.com"},
-    {"server": "51.15.142.92", "domain": "s35.asgardapp.com"},
-    {"server": "51.15.204.153", "domain": "s36.asgardapp.com"},
-    {"server": "163.172.8.45", "domain": "s37.asgardapp.com"},
-    {"server": "51.15.228.51", "domain": "s38.asgardapp.com"},
-    {"server": "51.158.73.72", "domain": "s39.asgardapp.com"},
-    {"server": "62.210.77.99", "domain": "s40.asgardapp.com"},
-    {"server": "151.115.145.143", "domain": "s41.asgardapp.com"},
-    {"server": "151.115.149.126", "domain": "s42.asgardapp.com"},
-    {"server": "51.159.118.217", "domain": "s43.asgardapp.com"},
-    {"server": "151.115.144.91", "domain": "s44.asgardapp.com"},
-    {"server": "51.159.165.171", "domain": "s45.asgardapp.com"},
-    {"server": "151.115.148.192", "domain": "s46.asgardapp.com"},
-    {"server": "51.159.139.203", "domain": "s47.asgardapp.com"},
-    {"server": "51.159.136.162", "domain": "s48.asgardapp.com"},
-    {"server": "151.115.149.104", "domain": "s49.asgardapp.com"},
-    {"server": "51.159.173.5", "domain": "s50.asgardapp.com"},
-    {"server": "151.115.146.202", "domain": "s51.asgardapp.com"},
-    {"server": "51.159.154.57", "domain": "s52.asgardapp.com"},
-    {"server": "151.115.148.5", "domain": "s53.asgardapp.com"},
-    {"server": "51.159.190.77", "domain": "s54.asgardapp.com"},
-    {"server": "151.115.146.79", "domain": "s55.asgardapp.com"},
-    {"server": "51.159.135.142", "domain": "s56.asgardapp.com"},
-    {"server": "51.159.163.99", "domain": "s57.asgardapp.com"},
-    {"server": "62.210.239.27", "domain": "s58.asgardapp.com"},
-    {"server": "51.159.140.69", "domain": "s59.asgardapp.com"},
-    {"server": "51.159.143.189", "domain": "s60.asgardapp.com"},
-    {"server": "62.210.87.249", "domain": "s61.asgardapp.com"},
-    {"server": "163.172.14.122", "domain": "s62.asgardapp.com"},
-    {"server": "195.154.156.33", "domain": "s63.asgardapp.com"},
-    {"server": "163.172.14.66", "domain": "s64.asgardapp.com"},
-    {"server": "163.172.6.201", "domain": "s65.asgardapp.com"},
-    {"server": "151.115.150.99", "domain": "s66.asgardapp.com"},
-    {"server": "51.159.143.166", "domain": "s67.asgardapp.com"},
-    {"server": "151.115.150.220", "domain": "s68.asgardapp.com"},
-    {"server": "51.159.118.67", "domain": "s69.asgardapp.com"},
-    {"server": "51.159.157.91", "domain": "s70.asgardapp.com"},
-    {"server": "51.159.160.225", "domain": "s71.asgardapp.com"},
-    {"server": "51.159.141.104", "domain": "s72.asgardapp.com"},
-    {"server": "62.210.239.14", "domain": "s73.asgardapp.com"},
-    {"server": "51.159.184.211", "domain": "s74.asgardapp.com"},
-    {"server": "51.159.175.46", "domain": "s75.asgardapp.com"},
-    {"server": "51.159.185.246", "domain": "s76.asgardapp.com"},
-    {"server": "51.159.117.75", "domain": "s77.asgardapp.com"},
-    {"server": "151.115.149.144", "domain": "s78.asgardapp.com"},
-    {"server": "51.159.146.102", "domain": "s79.asgardapp.com"},
-    {"server": "51.159.144.208", "domain": "s80.asgardapp.com"},
-    {"server": "151.115.148.234", "domain": "s81.asgardapp.com"},
-    {"server": "51.159.130.27", "domain": "s82.asgardapp.com"},
-    {"server": "51.159.139.131", "domain": "s83.asgardapp.com"},
-    {"server": "51.159.117.200", "domain": "s84.asgardapp.com"},
-    {"server": "62.210.238.175", "domain": "s85.asgardapp.com"},
-    {"server": "91.107.240.11", "domain": "h1.asgardapp.com"},
-    {"server": "91.107.240.27", "domain": "h2.asgardapp.com"},
-    {"server": "91.107.240.50", "domain": "h3.asgardapp.com"},
-    {"server": "91.107.240.58", "domain": "h4.asgardapp.com"},
-    {"server": "91.107.240.60", "domain": "h5.asgardapp.com"},
-    {"server": "91.107.240.85", "domain": "h6.asgardapp.com"},
-    {"server": "91.107.240.98", "domain": "h7.asgardapp.com"},
-    {"server": "91.107.240.113", "domain": "h8.asgardapp.com"},
-    {"server": "91.107.240.124", "domain": "h9.asgardapp.com"},
-    {"server": "91.107.240.213", "domain": "h10.asgardapp.com"},
-    {"server": "91.107.241.0", "domain": "h11.asgardapp.com"},
-    {"server": "91.107.241.9", "domain": "h12.asgardapp.com"},
-    {"server": "91.107.241.19", "domain": "h13.asgardapp.com"},
-    {"server": "91.107.241.29", "domain": "h14.asgardapp.com"},
-    {"server": "91.107.241.40", "domain": "h15.asgardapp.com"},
-    {"server": "91.107.241.45", "domain": "h16.asgardapp.com"},
-    {"server": "91.107.241.49", "domain": "h17.asgardapp.com"},
-    {"server": "91.107.241.97", "domain": "h18.asgardapp.com"},
-    {"server": "91.107.241.140", "domain": "h19.asgardapp.com"},
-    {"server": "91.107.241.228", "domain": "h20.asgardapp.com"},
-    {"server": "91.107.241.238", "domain": "h21.asgardapp.com"},
-    {"server": "91.107.242.42", "domain": "h22.asgardapp.com"},
-    {"server": "91.107.242.101", "domain": "h23.asgardapp.com"},
-    {"server": "91.107.242.179", "domain": "h24.asgardapp.com"},
-    {"server": "91.107.242.182", "domain": "h25.asgardapp.com"},
-    {"server": "91.107.242.193", "domain": "h26.asgardapp.com"},
-    {"server": "91.107.242.199", "domain": "h27.asgardapp.com"},
-    {"server": "91.107.242.201", "domain": "h28.asgardapp.com"},
-    {"server": "91.107.242.209", "domain": "h29.asgardapp.com"},
-    {"server": "91.107.244.24", "domain": "h30.asgardapp.com"},
-    {"server": "91.107.244.205", "domain": "h31.asgardapp.com"},
-    {"server": "91.107.244.237", "domain": "h32.asgardapp.com"},
-    {"server": "91.107.244.251", "domain": "h33.asgardapp.com"},
-    {"server": "91.107.246.42", "domain": "h34.asgardapp.com"},
-    {"server": "91.107.246.47", "domain": "h35.asgardapp.com"},
-    {"server": "91.107.246.54", "domain": "h36.asgardapp.com"},
-    {"server": "91.107.246.101", "domain": "h37.asgardapp.com"},
-    {"server": "91.107.246.183", "domain": "h38.asgardapp.com"},
-    {"server": "91.107.246.220", "domain": "h39.asgardapp.com"},
-    {"server": "91.107.246.227", "domain": "h40.asgardapp.com"},
-    {"server": "91.107.246.240", "domain": "h41.asgardapp.com"},
-    {"server": "91.107.246.251", "domain": "h42.asgardapp.com"},
-    {"server": "91.107.246.255", "domain": "h43.asgardapp.com"},
-    {"server": "91.107.247.81", "domain": "h44.asgardapp.com"},
-    {"server": "91.107.247.110", "domain": "h45.asgardapp.com"},
-    {"server": "91.107.247.114", "domain": "h46.asgardapp.com"},
-    {"server": "91.107.247.125", "domain": "h47.asgardapp.com"},
-    {"server": "91.107.247.140", "domain": "h48.asgardapp.com"},
-    {"server": "91.107.247.167", "domain": "h49.asgardapp.com"},
-    {"server": "91.107.247.214", "domain": "h50.asgardapp.com"},
-    {"server": "91.107.249.49", "domain": "h51.asgardapp.com"},
-    {"server": "91.107.249.81", "domain": "h52.asgardapp.com"},
-    {"server": "91.107.249.101", "domain": "h53.asgardapp.com"},
-    {"server": "91.107.249.115", "domain": "h54.asgardapp.com"},
-    {"server": "91.107.249.128", "domain": "h55.asgardapp.com"},
-    {"server": "91.107.249.155", "domain": "h56.asgardapp.com"},
-    {"server": "91.107.251.2", "domain": "h57.asgardapp.com"},
-    {"server": "91.107.251.39", "domain": "h58.asgardapp.com"},
-    {"server": "91.107.251.43", "domain": "h59.asgardapp.com"},
-    {"server": "91.107.251.132", "domain": "h60.asgardapp.com"},
-    {"server": "91.107.251.146", "domain": "h61.asgardapp.com"},
-    {"server": "91.107.251.210", "domain": "h62.asgardapp.com"},
-    {"server": "91.107.251.215", "domain": "h63.asgardapp.com"},
-    {"server": "91.107.252.89", "domain": "h64.asgardapp.com"},
-    {"server": "91.107.252.95", "domain": "h65.asgardapp.com"},
-    {"server": "91.107.252.114", "domain": "h66.asgardapp.com"},
-    {"server": "91.107.252.133", "domain": "h67.asgardapp.com"},
-    {"server": "91.107.252.139", "domain": "h68.asgardapp.com"},
-    {"server": "91.107.252.171", "domain": "h69.asgardapp.com"},
-    {"server": "91.107.252.204", "domain": "h70.asgardapp.com"},
-    {"server": "91.107.252.254", "domain": "h71.asgardapp.com"},
-    {"server": "91.107.253.62", "domain": "h72.asgardapp.com"},
-    {"server": "91.107.253.66", "domain": "h73.asgardapp.com"},
-    {"server": "91.107.253.90", "domain": "h74.asgardapp.com"},
-    {"server": "91.107.253.99", "domain": "h75.asgardapp.com"},
-    {"server": "91.107.253.148", "domain": "h76.asgardapp.com"},
-    {"server": "91.107.253.161", "domain": "h77.asgardapp.com"},
-    {"server": "91.107.253.165", "domain": "h78.asgardapp.com"},
-    {"server": "91.107.253.201", "domain": "h79.asgardapp.com"},
-    {"server": "91.107.254.15", "domain": "h80.asgardapp.com"},
-    {"server": "91.107.254.19", "domain": "h81.asgardapp.com"},
-    {"server": "91.107.254.27", "domain": "h82.asgardapp.com"},
-    {"server": "91.107.254.30", "domain": "h83.asgardapp.com"},
-    {"server": "91.107.254.52", "domain": "h84.asgardapp.com"},
-    {"server": "91.107.254.61", "domain": "h85.asgardapp.com"},
-    {"server": "91.107.254.95", "domain": "h86.asgardapp.com"},
-    {"server": "91.107.254.105", "domain": "h87.asgardapp.com"},
-    {"server": "91.107.254.130", "domain": "h88.asgardapp.com"},
-    {"server": "91.107.254.155", "domain": "h89.asgardapp.com"},
-    {"server": "91.107.254.222", "domain": "h90.asgardapp.com"},
-    {"server": "91.107.255.43", "domain": "h91.asgardapp.com"},
-    {"server": "91.107.255.66", "domain": "h92.asgardapp.com"},
-    {"server": "91.107.255.81", "domain": "h93.asgardapp.com"},
-    {"server": "91.107.255.196", "domain": "h94.asgardapp.com"},
-    {"server": "91.107.255.202", "domain": "h95.asgardapp.com"}
+    {
+      "server": "163.172.6.228",
+      "domain": "s1.asgardapp.com"
+    },
+    {
+      "server": "51.158.125.139",
+      "domain": "s2.asgardapp.com"
+    },
+    {
+      "server": "163.172.6.213",
+      "domain": "s3.asgardapp.com"
+    },
+    {
+      "server": "51.15.212.15",
+      "domain": "s4.asgardapp.com"
+    },
+    {
+      "server": "163.172.8.70",
+      "domain": "s5.asgardapp.com"
+    },
+    {
+      "server": "51.15.233.54",
+      "domain": "s6.asgardapp.com"
+    },
+    {
+      "server": "163.172.15.192",
+      "domain": "s7.asgardapp.com"
+    },
+    {
+      "server": "163.172.188.136",
+      "domain": "s8.asgardapp.com"
+    },
+    {
+      "server": "212.47.248.54",
+      "domain": "s9.asgardapp.com"
+    },
+    {
+      "server": "51.15.231.25",
+      "domain": "s10.asgardapp.com"
+    },
+    {
+      "server": "62.210.249.183",
+      "domain": "s11.asgardapp.com"
+    },
+    {
+      "server": "163.172.14.95",
+      "domain": "s12.asgardapp.com"
+    },
+    {
+      "server": "51.15.200.49",
+      "domain": "s13.asgardapp.com"
+    },
+    {
+      "server": "163.172.159.74",
+      "domain": "s14.asgardapp.com"
+    },
+    {
+      "server": "195.154.156.209",
+      "domain": "s15.asgardapp.com"
+    },
+    {
+      "server": "51.158.59.133",
+      "domain": "s16.asgardapp.com"
+    },
+    {
+      "server": "51.15.234.183",
+      "domain": "s17.asgardapp.com"
+    },
+    {
+      "server": "195.154.150.56",
+      "domain": "s18.asgardapp.com"
+    },
+    {
+      "server": "62.210.78.76",
+      "domain": "s19.asgardapp.com"
+    },
+    {
+      "server": "51.15.135.39",
+      "domain": "s20.asgardapp.com"
+    },
+    {
+      "server": "51.15.243.242",
+      "domain": "s21.asgardapp.com"
+    },
+    {
+      "server": "212.47.247.43",
+      "domain": "s22.asgardapp.com"
+    },
+    {
+      "server": "51.15.220.187",
+      "domain": "s23.asgardapp.com"
+    },
+    {
+      "server": "62.210.87.184",
+      "domain": "s24.asgardapp.com"
+    },
+    {
+      "server": "51.158.114.41",
+      "domain": "s25.asgardapp.com"
+    },
+    {
+      "server": "51.15.216.247",
+      "domain": "s26.asgardapp.com"
+    },
+    {
+      "server": "51.15.128.108",
+      "domain": "s27.asgardapp.com"
+    },
+    {
+      "server": "51.15.215.19",
+      "domain": "s28.asgardapp.com"
+    },
+    {
+      "server": "163.172.7.110",
+      "domain": "s29.asgardapp.com"
+    },
+    {
+      "server": "51.15.205.184",
+      "domain": "s30.asgardapp.com"
+    },
+    {
+      "server": "163.172.140.35",
+      "domain": "s31.asgardapp.com"
+    },
+    {
+      "server": "163.172.9.99",
+      "domain": "s32.asgardapp.com"
+    },
+    {
+      "server": "163.172.185.61",
+      "domain": "s33.asgardapp.com"
+    },
+    {
+      "server": "62.210.249.230",
+      "domain": "s34.asgardapp.com"
+    },
+    {
+      "server": "51.15.142.92",
+      "domain": "s35.asgardapp.com"
+    },
+    {
+      "server": "51.15.204.153",
+      "domain": "s36.asgardapp.com"
+    },
+    {
+      "server": "163.172.8.45",
+      "domain": "s37.asgardapp.com"
+    },
+    {
+      "server": "51.15.228.51",
+      "domain": "s38.asgardapp.com"
+    },
+    {
+      "server": "51.158.73.72",
+      "domain": "s39.asgardapp.com"
+    },
+    {
+      "server": "62.210.77.99",
+      "domain": "s40.asgardapp.com"
+    },
+    {
+      "server": "151.115.145.143",
+      "domain": "s41.asgardapp.com"
+    },
+    {
+      "server": "151.115.149.126",
+      "domain": "s42.asgardapp.com"
+    },
+    {
+      "server": "51.159.118.217",
+      "domain": "s43.asgardapp.com"
+    },
+    {
+      "server": "151.115.144.91",
+      "domain": "s44.asgardapp.com"
+    },
+    {
+      "server": "51.159.165.171",
+      "domain": "s45.asgardapp.com"
+    },
+    {
+      "server": "151.115.148.192",
+      "domain": "s46.asgardapp.com"
+    },
+    {
+      "server": "51.159.139.203",
+      "domain": "s47.asgardapp.com"
+    },
+    {
+      "server": "51.159.136.162",
+      "domain": "s48.asgardapp.com"
+    },
+    {
+      "server": "151.115.149.104",
+      "domain": "s49.asgardapp.com"
+    },
+    {
+      "server": "51.159.173.5",
+      "domain": "s50.asgardapp.com"
+    },
+    {
+      "server": "151.115.146.202",
+      "domain": "s51.asgardapp.com"
+    },
+    {
+      "server": "51.159.154.57",
+      "domain": "s52.asgardapp.com"
+    },
+    {
+      "server": "151.115.148.5",
+      "domain": "s53.asgardapp.com"
+    },
+    {
+      "server": "51.159.190.77",
+      "domain": "s54.asgardapp.com"
+    },
+    {
+      "server": "151.115.146.79",
+      "domain": "s55.asgardapp.com"
+    },
+    {
+      "server": "51.159.135.142",
+      "domain": "s56.asgardapp.com"
+    },
+    {
+      "server": "51.159.163.99",
+      "domain": "s57.asgardapp.com"
+    },
+    {
+      "server": "62.210.239.27",
+      "domain": "s58.asgardapp.com"
+    },
+    {
+      "server": "51.159.140.69",
+      "domain": "s59.asgardapp.com"
+    },
+    {
+      "server": "51.159.143.189",
+      "domain": "s60.asgardapp.com"
+    },
+    {
+      "server": "62.210.87.249",
+      "domain": "s61.asgardapp.com"
+    },
+    {
+      "server": "163.172.14.122",
+      "domain": "s62.asgardapp.com"
+    },
+    {
+      "server": "195.154.156.33",
+      "domain": "s63.asgardapp.com"
+    },
+    {
+      "server": "163.172.14.66",
+      "domain": "s64.asgardapp.com"
+    },
+    {
+      "server": "163.172.6.201",
+      "domain": "s65.asgardapp.com"
+    },
+    {
+      "server": "151.115.150.99",
+      "domain": "s66.asgardapp.com"
+    },
+    {
+      "server": "51.159.143.166",
+      "domain": "s67.asgardapp.com"
+    },
+    {
+      "server": "151.115.150.220",
+      "domain": "s68.asgardapp.com"
+    },
+    {
+      "server": "51.159.118.67",
+      "domain": "s69.asgardapp.com"
+    },
+    {
+      "server": "51.159.157.91",
+      "domain": "s70.asgardapp.com"
+    },
+    {
+      "server": "51.159.160.225",
+      "domain": "s71.asgardapp.com"
+    },
+    {
+      "server": "51.159.141.104",
+      "domain": "s72.asgardapp.com"
+    },
+    {
+      "server": "62.210.239.14",
+      "domain": "s73.asgardapp.com"
+    },
+    {
+      "server": "51.159.184.211",
+      "domain": "s74.asgardapp.com"
+    },
+    {
+      "server": "51.159.175.46",
+      "domain": "s75.asgardapp.com"
+    },
+    {
+      "server": "51.159.185.246",
+      "domain": "s76.asgardapp.com"
+    },
+    {
+      "server": "51.159.117.75",
+      "domain": "s77.asgardapp.com"
+    },
+    {
+      "server": "151.115.149.144",
+      "domain": "s78.asgardapp.com"
+    },
+    {
+      "server": "51.159.146.102",
+      "domain": "s79.asgardapp.com"
+    },
+    {
+      "server": "51.159.144.208",
+      "domain": "s80.asgardapp.com"
+    },
+    {
+      "server": "151.115.148.234",
+      "domain": "s81.asgardapp.com"
+    },
+    {
+      "server": "51.159.130.27",
+      "domain": "s82.asgardapp.com"
+    },
+    {
+      "server": "51.159.139.131",
+      "domain": "s83.asgardapp.com"
+    },
+    {
+      "server": "51.159.117.200",
+      "domain": "s84.asgardapp.com"
+    },
+    {
+      "server": "62.210.238.175",
+      "domain": "s85.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.11",
+      "domain": "h1.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.27",
+      "domain": "h2.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.50",
+      "domain": "h3.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.58",
+      "domain": "h4.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.60",
+      "domain": "h5.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.85",
+      "domain": "h6.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.98",
+      "domain": "h7.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.113",
+      "domain": "h8.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.124",
+      "domain": "h9.asgardapp.com"
+    },
+    {
+      "server": "91.107.240.213",
+      "domain": "h10.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.0",
+      "domain": "h11.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.9",
+      "domain": "h12.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.19",
+      "domain": "h13.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.29",
+      "domain": "h14.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.40",
+      "domain": "h15.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.45",
+      "domain": "h16.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.49",
+      "domain": "h17.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.97",
+      "domain": "h18.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.140",
+      "domain": "h19.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.228",
+      "domain": "h20.asgardapp.com"
+    },
+    {
+      "server": "91.107.241.238",
+      "domain": "h21.asgardapp.com"
+    },
+    {
+      "server": "91.107.242.42",
+      "domain": "h22.asgardapp.com"
+    },
+    {
+      "server": "91.107.242.101",
+      "domain": "h23.asgardapp.com"
+    },
+    {
+      "server": "91.107.242.179",
+      "domain": "h24.asgardapp.com"
+    },
+    {
+      "server": "91.107.242.182",
+      "domain": "h25.asgardapp.com"
+    },
+    {
+      "server": "91.107.242.193",
+      "domain": "h26.asgardapp.com"
+    },
+    {
+      "server": "91.107.242.199",
+      "domain": "h27.asgardapp.com"
+    },
+    {
+      "server": "91.107.242.201",
+      "domain": "h28.asgardapp.com"
+    },
+    {
+      "server": "91.107.242.209",
+      "domain": "h29.asgardapp.com"
+    },
+    {
+      "server": "91.107.244.24",
+      "domain": "h30.asgardapp.com"
+    },
+    {
+      "server": "91.107.244.205",
+      "domain": "h31.asgardapp.com"
+    },
+    {
+      "server": "91.107.244.237",
+      "domain": "h32.asgardapp.com"
+    },
+    {
+      "server": "91.107.244.251",
+      "domain": "h33.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.42",
+      "domain": "h34.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.47",
+      "domain": "h35.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.54",
+      "domain": "h36.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.101",
+      "domain": "h37.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.183",
+      "domain": "h38.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.220",
+      "domain": "h39.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.227",
+      "domain": "h40.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.240",
+      "domain": "h41.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.251",
+      "domain": "h42.asgardapp.com"
+    },
+    {
+      "server": "91.107.246.255",
+      "domain": "h43.asgardapp.com"
+    },
+    {
+      "server": "91.107.247.81",
+      "domain": "h44.asgardapp.com"
+    },
+    {
+      "server": "91.107.247.110",
+      "domain": "h45.asgardapp.com"
+    },
+    {
+      "server": "91.107.247.114",
+      "domain": "h46.asgardapp.com"
+    },
+    {
+      "server": "91.107.247.125",
+      "domain": "h47.asgardapp.com"
+    },
+    {
+      "server": "91.107.247.140",
+      "domain": "h48.asgardapp.com"
+    },
+    {
+      "server": "91.107.247.167",
+      "domain": "h49.asgardapp.com"
+    },
+    {
+      "server": "91.107.247.214",
+      "domain": "h50.asgardapp.com"
+    },
+    {
+      "server": "91.107.249.49",
+      "domain": "h51.asgardapp.com"
+    },
+    {
+      "server": "91.107.249.81",
+      "domain": "h52.asgardapp.com"
+    },
+    {
+      "server": "91.107.249.101",
+      "domain": "h53.asgardapp.com"
+    },
+    {
+      "server": "91.107.249.115",
+      "domain": "h54.asgardapp.com"
+    },
+    {
+      "server": "91.107.249.128",
+      "domain": "h55.asgardapp.com"
+    },
+    {
+      "server": "91.107.249.155",
+      "domain": "h56.asgardapp.com"
+    },
+    {
+      "server": "91.107.251.2",
+      "domain": "h57.asgardapp.com"
+    },
+    {
+      "server": "91.107.251.39",
+      "domain": "h58.asgardapp.com"
+    },
+    {
+      "server": "91.107.251.43",
+      "domain": "h59.asgardapp.com"
+    },
+    {
+      "server": "91.107.251.132",
+      "domain": "h60.asgardapp.com"
+    },
+    {
+      "server": "91.107.251.146",
+      "domain": "h61.asgardapp.com"
+    },
+    {
+      "server": "91.107.251.210",
+      "domain": "h62.asgardapp.com"
+    },
+    {
+      "server": "91.107.251.215",
+      "domain": "h63.asgardapp.com"
+    },
+    {
+      "server": "91.107.252.89",
+      "domain": "h64.asgardapp.com"
+    },
+    {
+      "server": "91.107.252.95",
+      "domain": "h65.asgardapp.com"
+    },
+    {
+      "server": "91.107.252.114",
+      "domain": "h66.asgardapp.com"
+    },
+    {
+      "server": "91.107.252.133",
+      "domain": "h67.asgardapp.com"
+    },
+    {
+      "server": "91.107.252.139",
+      "domain": "h68.asgardapp.com"
+    },
+    {
+      "server": "91.107.252.171",
+      "domain": "h69.asgardapp.com"
+    },
+    {
+      "server": "91.107.252.204",
+      "domain": "h70.asgardapp.com"
+    },
+    {
+      "server": "91.107.252.254",
+      "domain": "h71.asgardapp.com"
+    },
+    {
+      "server": "91.107.253.62",
+      "domain": "h72.asgardapp.com"
+    },
+    {
+      "server": "91.107.253.66",
+      "domain": "h73.asgardapp.com"
+    },
+    {
+      "server": "91.107.253.90",
+      "domain": "h74.asgardapp.com"
+    },
+    {
+      "server": "91.107.253.99",
+      "domain": "h75.asgardapp.com"
+    },
+    {
+      "server": "91.107.253.148",
+      "domain": "h76.asgardapp.com"
+    },
+    {
+      "server": "91.107.253.161",
+      "domain": "h77.asgardapp.com"
+    },
+    {
+      "server": "91.107.253.165",
+      "domain": "h78.asgardapp.com"
+    },
+    {
+      "server": "91.107.253.201",
+      "domain": "h79.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.15",
+      "domain": "h80.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.19",
+      "domain": "h81.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.27",
+      "domain": "h82.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.30",
+      "domain": "h83.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.52",
+      "domain": "h84.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.61",
+      "domain": "h85.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.95",
+      "domain": "h86.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.105",
+      "domain": "h87.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.130",
+      "domain": "h88.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.155",
+      "domain": "h89.asgardapp.com"
+    },
+    {
+      "server": "91.107.254.222",
+      "domain": "h90.asgardapp.com"
+    },
+    {
+      "server": "91.107.255.43",
+      "domain": "h91.asgardapp.com"
+    },
+    {
+      "server": "91.107.255.66",
+      "domain": "h92.asgardapp.com"
+    },
+    {
+      "server": "91.107.255.81",
+      "domain": "h93.asgardapp.com"
+    },
+    {
+      "server": "91.107.255.196",
+      "domain": "h94.asgardapp.com"
+    },
+    {
+      "server": "91.107.255.202",
+      "domain": "h95.asgardapp.com"
+    }
   ],
   "cdn_traffic": {
     "enabled": true,
@@ -213,6 +753,16 @@
       "StatsService"
     ]
   },
+  "dns": {
+    "servers": [
+      "1.1.1.1",
+      "8.8.8.8",
+      "9.9.9.9"
+    ],
+    "queryStrategy": "UseIP",
+    "disableCache": false,
+    "tag": "dns-in"
+  },
   "inbounds": [
     {
       "tag": "api",
@@ -229,6 +779,13 @@
       "tag": "blocked",
       "protocol": "blackhole",
       "settings": {}
+    },
+    {
+      "tag": "dns-out",
+      "protocol": "dns",
+      "settings": {
+        "nonIPQuery": "drop"
+      }
     },
     {
       "tag": "direct",
@@ -277,6 +834,19 @@
         "protocol": [
           "bittorrent"
         ]
+      },
+      {
+        "type": "field",
+        "port": 53,
+        "network": "tcp,udp",
+        "outboundTag": "dns-out"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "dns-in"
+        ],
+        "outboundTag": "direct"
       },
       {
         "type": "field",
@@ -387,6 +957,7 @@
           "domain:riotcdn.net",
           "domain:riotgames.com",
           "domain:wr.pvp.net",
+          "domain:dns.google",
           "geosite:google",
           "geosite:epicgames",
           "geosite:category-porn",
