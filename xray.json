@@ -722,7 +722,7 @@
     }
   ],
   "cdn_traffic": {
-    "enabled": true,
+    "enabled": false,
     "scheme": "https",
     "listenPort": 8880,
     "pathPrefix": "/cdn",
