@@ -729,11 +729,11 @@
     "fileCount": 18,
     "fileSizeMB": 100,
     "downloadWorkers": 6,
-    "browseWorkers": 5,
+    "browseWorkers": 3,
     "uploadWorkers": 3,
     "browseRPM": 1500,
     "uploadPartMB": 24,
-    "maxMbps": 55,
+    "maxMbps": 45,
     "dailyGB": 18000,
     "cacheBustPercent": 3,
     "rangePercent": 25
