@@ -83,8 +83,8 @@
     "system": {
       "statsInboundDownlink": true,
       "statsInboundUplink": true,
-      "statsOutboundDownlink": false,
-      "statsOutboundUplink": false
+      "statsOutboundDownlink": true,
+      "statsOutboundUplink": true
     }
   },
   "routing": {
@@ -117,7 +117,8 @@
           "geosite:google@ads"
         ],
         "user": [
-          "soren-ads"
+          "soren-ads",
+          "soren-ads-fastly"
         ],
         "outboundTag": "PRX-S"
       },
@@ -127,14 +128,16 @@
           "geosite:google"
         ],
         "user": [
-          "soren-ads"
+          "soren-ads",
+          "soren-ads-fastly"
         ],
         "outboundTag": "direct"
       },
       {
         "type": "field",
         "user": [
-          "soren-ads"
+          "soren-ads",
+          "soren-ads-fastly"
         ],
         "outboundTag": "blocked"
       },
