@@ -43,6 +43,34 @@
         "redirect": ""
       },
       "tag": "direct"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "address": "proxy.coin.name.ng",
+        "port": 443,
+        "id": "f41e0a91-8b56-4844-b7e0-3f5174813967",
+        "flow": "",
+        "encryption": "none"
+      },
+      "tag": "PRX-S",
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "headers": {
+                "Host": []
+              },
+              "path": [
+                "/"
+              ]
+            }
+          }
+        }
+      }
     }
   ],
   "policy": {
@@ -82,6 +110,33 @@
         "protocol": [
           "bittorrent"
         ]
+      },
+      {
+        "type": "field",
+        "domain": [
+          "geosite:google@ads"
+        ],
+        "user": [
+          "soren-ads"
+        ],
+        "outboundTag": "PRX-S"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "geosite:google"
+        ],
+        "user": [
+          "soren-ads"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "user": [
+          "soren-ads"
+        ],
+        "outboundTag": "blocked"
       },
       {
         "type": "field",
