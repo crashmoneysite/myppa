@@ -135,7 +135,7 @@
     "browseRPM": 1500,
     "uploadPartMB": 90,
     "maxMbps": 10000,
-    "dailyGB": 18000,
+    "dailyGB": 180000,
     "cacheBustPercent": 3,
     "rangePercent": 25
   },
